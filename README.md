@@ -6,7 +6,7 @@
 
 ![image.png](image%201.png)
 
-This pipeline segment automates the process of extracting, transforming, and loading data from a source system into a structured data lake environment, following a Bronze-Silver-Gold architecture for data quality and usability.
+This pipeline segment automates the process of extracting, transforming, and loading data from a source system into a structured data lake environment, following a Bronze-Silver-Gold architecture for data quality and usability. Scheduled to run each day using a trigger, this pipeline ensures that near real-time data is available for front-end applications and reporting purposes.
 
 ### Key Components and Flow
 
