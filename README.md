@@ -47,7 +47,7 @@ Executes another Azure Databricks notebook to further transform the Silver layer
 
 ![image.png](image%202.png)
 
-This segment of the pipeline, executed within Azure Synapse Analytics, focuses on creating and managing views over tables residing in the Gold layer of your data lake. It automates the process of generating views within a server-less SQL pool in Azure Synapse, which can then be used for reporting and querying in tools like Power BI.
+This segment of the pipeline, executed within Azure Synapse Analytics, focuses on creating and managing views over tables residing in the Gold layer of your data lake. It automates the process of generating views within a server-less SQL pool in Azure Synapse, which can then be used for reporting and querying in tools like Power BI. Unlike the daily-triggered Data Factory pipeline, this Synapse pipeline is designed for on-demand execution. No trigger is set, as it is primarily run on the initial setup to create the views. Subsequently, it is only executed when modifications to the view definitions or schema changes in the Gold layer necessitate updates to the views.
 
 ### Key Components and Flow
 
