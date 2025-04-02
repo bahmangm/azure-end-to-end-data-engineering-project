@@ -1,7 +1,9 @@
 # Microsoft Azure End-To-End Data Engineering Project
+This project addresses a critical business need by building a comprehensive data pipeline on Azure. The goal is to extract customer and sales data from an on-premises SQL database, transform it in the cloud, and generate actionable insights through a Power BI dashboard.
 
 ![image.png](image.png)
 
+---
 # In the Azure Data Factory:
 
 ![image.png](image%201.png)
@@ -43,6 +45,7 @@ Executes an Azure Databricks notebook that transforms the raw data (Bronze layer
 2. **Notebook Activity ("Silver to Gold"):**
 Executes another Azure Databricks notebook to further transform the Silver layer data into a highly curated Gold layer.
 
+---
 # In the Azure Synapse Analytics:
 
 ![image.png](image%202.png)
