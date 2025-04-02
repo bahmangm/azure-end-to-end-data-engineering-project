@@ -1,12 +1,12 @@
 # Microsoft Azure End-To-End Data Engineering Project
 This project addresses a critical business need by building a comprehensive data pipeline on Azure. The goal is to extract customer and sales data from an on-premises SQL database, transform it in the cloud, and generate actionable insights through a Power BI dashboard.
 
-![image.png](image.png)
+![image.png](images/image.png)
 
 ---
 # In the Azure Data Factory:
 
-![image.png](image%201.png)
+![image.png](images/image%201.png)
 
 This pipeline segment automates the process of extracting, transforming, and loading data from a source system into a structured data lake environment, following a Bronze-Silver-Gold architecture for data quality and usability. Scheduled to run each day using a trigger, this pipeline ensures that near real-time data is available for front-end applications and reporting purposes.
 
@@ -48,7 +48,7 @@ Executes another Azure Databricks notebook to further transform the Silver layer
 ---
 # In the Azure Synapse Analytics:
 
-![image.png](image%202.png)
+![image.png](images/image%202.png)
 
 This segment of the pipeline, executed within Azure Synapse Analytics, focuses on creating and managing views over tables residing in the Gold layer of your data lake. It automates the process of generating views within a server-less SQL pool in Azure Synapse, which can then be used for reporting and querying in tools like Power BI. Unlike the daily-triggered Data Factory pipeline, this Synapse pipeline is designed for on-demand execution. No trigger is set, as it is primarily run on the initial setup to create the views. Subsequently, it is only executed when modifications to the view definitions or schema changes in the Gold layer necessitate updates to the views.
 
